@@ -1,3 +1,6 @@
+# Private Files
+nodemon.json
+
 # Logs
 logs
 *.log
