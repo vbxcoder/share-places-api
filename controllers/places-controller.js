@@ -24,7 +24,9 @@ const getPlaceById = async (req, res, next) => {
 
   // Unreachable Code
   if (!identifiedPlace) {
-    return next(HttpError("Could not find a place for the provided id.", 400));
+    return next(
+      new HttpError("Could not find a place for the provided id.", 400)
+    );
     // return res
     //   .status(404)
     //   .json({ message: "Could not find a place for the provided id." });
