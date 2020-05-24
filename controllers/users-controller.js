@@ -25,7 +25,7 @@ const singUp = async (req, res, next) => {
     );
   }
 
-  const { name, email, password, image } = req.body;
+  const { name, email, password } = req.body;
   let existingUser;
   try {
     existingUser = await User.findOne({ email: email });
@@ -153,7 +153,7 @@ const login = async (req, res, next) => {
     message: "Logged in!",
     userId: identifiedUser.id,
     email: identifiedUser.email,
-    token: token
+    token: token,
   });
 };
 
