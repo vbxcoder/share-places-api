@@ -7,4 +7,4 @@
 # share-places-api
 Social media platform sample about sharing places with photo.
 
-https://edumern-api.herokuapp.com/
+https://share-places-api.herokuapp.com/
